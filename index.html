@@ -141,7 +141,7 @@
                 <div class="hidden sm:flex items-center gap-6">
                     <button id="mods-tab" class="nav-tab active font-semibold uppercase tracking-wider">Home</button>
                     <button id="status-tab" class="nav-tab font-semibold uppercase tracking-wider">Status</button>
-                </div> <a href="https://discord.gg/2d9wt3Fs2K" target="_blank" class="btn bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 sm:px-5 rounded-full shadow-lg text-sm sm:text-base">Discord Server</a>
+                </div> <a href="https://discord.gg/aFZaeH3asQ" target="_blank" class="btn bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 sm:px-5 rounded-full shadow-lg text-sm sm:text-base">Discord Server</a>
 
             </nav>
         </header>
@@ -159,48 +159,6 @@
 
                     <p class="text-lg sm:text-xl text-gray-400 max-w-3xl mx-auto">Access the most powerful and secure script for your favorite games.</p>
                 </section>
-                <div class="space-y-12">
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 justify-center">
-                        <div class="install-step flex flex-col items-center justify-start p-4 rounded-lg bg-gray-900/50 border border-gray-700/50">
-                             <h3 class="font-bold text-base text-white">DIESEL N' STEEL</h3>
-
-                            <p class="text-gray-400 text-sm mb-3"></p>
-                            <button onclick="copyScript('dns-script', this)" class="mt-auto bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-md shadow-lg transition-all duration-300 ease-in-out">Download Script</button> <code id="dns-script" class="hidden">
-loadstring(game:HttpGet("https://api.junkie-development.de/api/v1/luascripts/public/7e271c2e512592e76cba388f418132d79956d7aeca56ff9f8e560ea848d1ce56/download"))()
-        </code>
-
-                        </div>
-                        <div class="install-step flex flex-col items-center justify-start p-4 rounded-lg bg-gray-900/50 border border-gray-700/50">
-                             <h3 class="font-bold text-base text-white">THE FORGE</h3>
-
-                            <p class="text-gray-400 text-sm mb-3"></p>
-                            <button onclick="copyScript('forge-script', this)" class="mt-auto bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-md shadow-lg transition-all duration-300 ease-in-out">Download Script</button> <code id="forge-script" class="hidden">
-loadstring(game:HttpGet("https://api.junkie-development.de/api/v1/luascripts/public/4fa68e45b0064fba2b54af209a2cf005e83bd3ac8912987eedc891123590c6d8/download"))()
-        </code>
-
-                        </div>
-                    </div>
-                    <script>
-                        function copyScript(id, button) {
-                            const codeElement = document.getElementById(id);
-                            const scriptText = codeElement.innerText.trim();
-                        
-                            const textarea = document.createElement('textarea');
-                            textarea.value = scriptText;
-                            document.body.appendChild(textarea);
-                            textarea.select();
-                            try {
-                                document.execCommand('copy');
-                        
-                                const originalText = button.innerText;
-                                button.innerText = 'Copied!';
-                                setTimeout(() => { button.innerText = originalText; }, 1500);
-                        
-                            } catch (err) {
-                                console.error('Failed to copy:', err);
-                            }
-                            document.body.removeChild(textarea);
-                        }
                     </script>
                     <div class="bg-black/30 p-4 sm:p-8 rounded-2xl border border-gray-800 shadow-2xl reveal relative overflow-hidden game-grid-bg">
                          <h2 class="text-2xl sm:text-3xl font-bold text-center mb-8 text-white uppercase tracking-widest"
